@@ -6,10 +6,10 @@ import page_objects.main_page.MainPage;
 import page_objects.mens.mens_tops.MensTopsPage;
 import page_objects.mens.mens_tops.mens_tops_jackets.MensTopsJackets;
 
-public class VerifyFunctionalityOfNavigatingToMensJacketsPage extends BaseBrowserTest {
+public class VerifyFunctionalityOfNavigatingToMensTopsJacketsPage extends BaseBrowserTest {
 
     @Test
-    public void verifyNavigationFunctionalityToMensJacketsPage() {
+    public void verifyNavigationFunctionalityToMensTopsJacketsPage() {
 
         MainPage mainPage = new MainPage(driver);
         mainPage.moveToMensDropDown();

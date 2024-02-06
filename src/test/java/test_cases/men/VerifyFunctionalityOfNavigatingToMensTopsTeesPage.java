@@ -6,10 +6,11 @@ import page_objects.main_page.MainPage;
 import page_objects.mens.mens_tops.MensTopsPage;
 import page_objects.mens.mens_tops.mens_tops_tees.MensTopsTees;
 
-public class VerifyFunctionalityOfNavigatingToMensTeesPage extends BaseBrowserTest {
+public class VerifyFunctionalityOfNavigatingToMensTopsTeesPage extends BaseBrowserTest {
 
     @Test
-    public void verifyNavigationFunctionalityToMensTeesPage() throws InterruptedException {
+    public void verifyNavigationFunctionalityToMensTopsTeesPage() {
+
         MainPage mainPage = new MainPage(driver);
         mainPage.moveToMensDropDown();
         MensTopsPage mensTopsPage = new MensTopsPage(driver);
@@ -17,6 +18,5 @@ public class VerifyFunctionalityOfNavigatingToMensTeesPage extends BaseBrowserTe
         MensTopsTees mensTopsTees = new MensTopsTees(driver);
         mensTopsTees.clickMensTopsTees();
         mensTopsTees.confirmMensTeesPageIsVisible();
-        Thread.sleep(4000);
     }
 }
